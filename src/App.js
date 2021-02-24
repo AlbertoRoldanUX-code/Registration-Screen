@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +21,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <footer>
+        <p>Created by Alberto Roldán</p>
+        <p>Copyright {new Date().getFullYear()}</p>
+      </footer>
     </div>
   );
 }
