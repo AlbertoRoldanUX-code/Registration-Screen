@@ -6,7 +6,7 @@ var userIsRegistered = false;
 function App() {
   return ( 
   <div className="container">
-  {userIsRegistered?  <h1>Hello</h1> :  <Login />}
+  {userIsRegistered?  <Login /> : <h1>Hello</h1>   }
   </div>
   );
 }
