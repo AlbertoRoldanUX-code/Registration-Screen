@@ -10,6 +10,10 @@ function Form(){
   function changeBtnToBlack(){
     setBtnColor(true);
   }
+
+  function changeBtnToWhite(){
+    setBtnColor(false);
+  }
   
   
   return (
@@ -28,7 +32,7 @@ function Form(){
     type={"password"}
     placeholder={"Confirm Password"}
     />
-    <button type="submit" onMouseOver={changeBtnToBlack} style={{backgroundColor: btnColor? "black": "white"}}>Register</button>
+    <button type="submit" onMouseOver={changeBtnToBlack} onMouseOut={changeBtnToWhite} style={{backgroundColor: btnColor? "black": "white"}}>Register</button>
   </form>
   </div>);
 }
