@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Input from "./Input";
 
 
 
 function Form(){
-    return (
+    
+  const [btnColor, setBtnColor] = useState(false);
+
+  function changeBtnToBlack(){
+    setBtnColor(true);
+  }
+  
+  
+  return (
       <div>
     <h1>Sign up</h1>
     <form className="form">
@@ -20,7 +28,7 @@ function Form(){
     type={"password"}
     placeholder={"Confirm Password"}
     />
-    <button type="submit">Register</button>
+    <button type="submit" onMouseOver={changeBtnToBlack} style={{backgroundColor: btnColor? "black": "white"}}>Register</button>
   </form>
   </div>);
 }
