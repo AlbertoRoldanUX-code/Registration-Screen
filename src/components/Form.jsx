@@ -4,7 +4,10 @@ import Input from "./Input";
 
 
 function Form(){
-    return (<form className="form">
+    return (
+      <div>
+    <h1>Sign up</h1>
+    <form className="form">
     <Input 
     type={"text"}
     placeholder={"Username"}
@@ -18,7 +21,8 @@ function Form(){
     placeholder={"Confirm Password"}
     />
     <button type="submit">Register</button>
-  </form>);
+  </form>
+  </div>);
 }
 
 export default Form;
